@@ -1,0 +1,9 @@
+
+streamlit run scripts/inpaint_st.py -- configs/stable-diffusion/v1-inpainting-inference.yaml weights/rd64-uni.pth
+
+conda env create -f environment.yaml
+conda activate ldm
+conda install pytorch torchvision -c pytorch
+pip install transformers==4.19.2 diffusers invisible-watermark
+pip install -e .
+#conda env update -f environment.yaml
